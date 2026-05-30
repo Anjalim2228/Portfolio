@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -1078,4 +1079,704 @@ document.querySelectorAll('a[href^="#"]').forEach(l=>{
 })();
   </script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anjali Mane — CSE Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Google Fonts: Syne (display) + DM Sans (body) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =========================================================
+       CURSOR (custom glow dot)
+  ========================================================= -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- =========================================================
+       NAVBAR
+  ========================================================= -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">AM<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home"    class="nav-link active" data-section="home">Home</a></li>
+      <li><a href="#about"   class="nav-link" data-section="about">About</a></li>
+      <li><a href="#skills"  class="nav-link" data-section="skills">Skills</a></li>
+      <li><a href="#projects"class="nav-link" data-section="projects">Projects</a></li>
+      <li><a href="#achievements" class="nav-link" data-section="achievements">Achievements</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+    </ul>
+    <!-- Hamburger for mobile -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile nav overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <ul>
+      <li><a href="#home"    class="mob-link">Home</a></li>
+      <li><a href="#about"   class="mob-link">About</a></li>
+      <li><a href="#skills"  class="mob-link">Skills</a></li>
+      <li><a href="#projects"class="mob-link">Projects</a></li>
+      <li><a href="#achievements" class="mob-link">Achievements</a></li>
+      <li><a href="#contact" class="mob-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- =========================================================
+       HERO / HOME SECTION
+  ========================================================= -->
+  <section class="hero" id="home">
+    <!-- Decorative background grid -->
+    <div class="hero-grid"></div>
+    <!-- Floating orbs -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+
+    <div class="hero-content">
+      <!-- Eyebrow label -->
+      <p class="hero-eyebrow fade-up">
+        <span class="status-dot"></span>Available for Internship &amp; Placements
+      </p>
+
+      <!-- Main heading -->
+      <h1 class="hero-name fade-up delay-1">
+        Anjali<br /><span class="name-accent">Mane</span>
+      </h1>
+
+      <!-- Typing role line -->
+      <p class="hero-role fade-up delay-2">
+        <span class="prefix">I am a </span>
+        <span class="typed-text" id="typedText"></span>
+        <span class="cursor-blink">|</span>
+      </p>
+
+      <!-- Short intro -->
+      <p class="hero-intro fade-up delay-3">
+        Third-year CSE student at AG Patil Institute of Technology, Solapur. <br />
+        Currently mastering DSA in Java, building real-world projects, and exploring Python for AI-driven applications.
+      </p>
+
+      <!-- CTA buttons -->
+      <div class="hero-cta fade-up delay-4">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact"  class="btn btn-ghost">Let's Talk</a>
+      </div>
+
+      <!-- Social quick-links -->
+      <div class="hero-socials fade-up delay-5">
+        <a href="https://github.com/Anjalim2228" target="_blank" class="social-pill" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/anjali-mane-7161ab2bb/" target="_blank" class="social-pill" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+          LinkedIn
+        </a>
+        <a href="#" class="social-pill" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          Email
+        </a>
+      </div>
+    </div>
+
+    <!-- Hero right — abstract code card -->
+    <div class="hero-visual fade-up delay-3">
+      <div class="code-card">
+        <div class="code-card-bar">
+          <span class="cb cb-r"></span>
+          <span class="cb cb-y"></span>
+          <span class="cb cb-g"></span>
+          <span class="code-card-title">aryan.cpp</span>
+        </div>
+        <pre class="code-body"><code><span class="c-kw">class</span> <span class="c-cls">Developer</span> {
+  <span class="c-kw">public</span>:
+    string name    = <span class="c-str">"Anjali Mane"</span>;
+    string college = <span class="c-str">"SVERI COE, Solapur"</span>;
+    string degree  = <span class="c-str">"B.E. CSE (2022–26)"</span>;
+    string goal    = <span class="c-str">"SWE @ Top Tech"</span>;
+
+    vector&lt;string&gt; skills = {
+      <span class="c-str">"C++"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"SQL"</span>,
+      <span class="c-str">"DSA"</span>, <span class="c-str">"OOPs"</span>, <span class="c-str">"DBMS"</span>
+    };
+
+    <span class="c-kw">void</span> <span class="c-fn">greet</span>() {
+      cout &lt;&lt; <span class="c-str">"Let's build something great!"</span>;
+    }
+};</code></pre>
+      </div>
+    </div>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint fade-up delay-5">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT SECTION
+  ========================================================= -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-label reveal">About Me</div>
+      <h2 class="section-title reveal">The human<br/><em>behind the code.</em></h2>
+
+      <div class="about-grid">
+        <!-- Left: text -->
+        <div class="about-text reveal">
+          <p>
+           I’m <strong>Anjali Mane</strong>, a third-year Computer Science Engineering student who enjoys turning ideas into structured, working solutions. I like pushing my thinking through problem-solving — whether it’s working through a DSA question or building a feature from scratch.
+          </p>
+          <p>
+          I’m currently strengthening my foundation in <strong>Data Structures and Algorithms</strong> using <strong>Java</strong>, with a focus on writing clean, efficient, and maintainable code. Alongside that, I build web interfaces using <strong>HTML</strong> and <strong>CSS</strong> and have a basic understanding of <strong>SQL and database</strong> concepts.
+          </p>
+          <p>
+           I’m also exploring <strong>Python and AI</strong> , gradually expanding my skill set to understand how intelligent systems can be built and applied to real-world problems.</p>
+           <p>
+            I learn by building — from developing a peer-to-peer learning platform to experimenting with practical features that solve real user problems. For me, coding is not just about making things work, but about making them work well.
+             I’m currently preparing for <strong> Software Development Engineer (SDE)</strong> roles, aiming to grow as a developer who can think clearly, solve problems efficiently, and continuously improve.
+          
+
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">DSA Problems Solved</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="4">0</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num" data-target="5">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: tags cloud -->
+        <div class="about-tags reveal">
+          <div class="tags-heading">Core Interests</div>
+          <div class="tag-cloud">
+            <span class="tag tag-hot">Problem Solving</span>
+            <span class="tag tag-hot">Web Development</span>
+            <span class="tag tag-hot">DSA</span>
+            <span class="tag tag-hot">Ai</span>
+            <span class="tag tag-hot">Java</span>
+            <span class="tag tag-hot">Competitive Programming</span>
+            <span class="tag tag-hot">Database Using SQL</span>
+            <span class="tag tag-hot">Clean Code</span>
+            <span class="tag tag-hot">Python</span>
+
+          </div>
+
+          <div class="tags-heading" style="margin-top:2rem;">Education</div>
+          <div class="edu-card">
+            <div class="edu-icon">🎓</div>
+            <div>
+              <div class="edu-degree">B.Tech  Computer Science &amp; Engineering</div>
+              <div class="edu-college">A.G.Patil Institute of Technology, Solapur</div>
+              <div class="edu-year">2023 – 2027 &nbsp;|&nbsp; CGPA: 7.9</div>
+            </div>
+          </div>
+          <div class="edu-card">
+            <div class="edu-icon">🏫</div>
+            <div>
+              <div class="edu-degree">HSC — Science (PCM)</div>
+              <div class="edu-college">S.R.Chandak , Solapur</div>
+              <div class="edu-year">2022 &nbsp;|&nbsp; 60%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS SECTION
+  ========================================================= -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Skill Set</div>
+      <h2 class="section-title reveal">What I work<br/><em>with.</em></h2>
+
+      <div class="skills-grid">
+        <!-- Languages -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⟨/⟩</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-bars">
+            <div class="skill-bar-item" data-skill="C++" data-level="88">
+              <div class="skill-info"><span>Java</span><span class="skill-pct">90%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--w:88%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="Python" data-level="75">
+              <div class="skill-info"><span>Python</span><span class="skill-pct">50%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--w:75%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="JavaScript" data-level="65">
+              <div class="skill-info"><span>DSA</span><span class="skill-pct">50%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--w:65%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="SQL" data-level="80">
+              <div class="skill-info"><span>SQL</span><span class="skill-pct">80%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--w:80%"></div></div>
+            </div>
+            <div class="skill-bar-item" data-skill="HTML/CSS" data-level="72">
+              <div class="skill-info"><span>HTML / CSS</span><span class="skill-pct">72%</span></div>
+              <div class="skill-track"><div class="skill-fill" style="--w:72%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Core CS Subjects -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📐</span>
+            <h3>Core CS</h3>
+          </div>
+          <div class="core-pills">
+            <span class="core-pill level-strong">DSA</span>
+            <span class="core-pill level-strong">Java</span>
+
+            <span class="core-pill level-strong">OOPs</span>
+            <span class="core-pill level-strong">DBMS</span>
+            <span class="core-pill level-strong">SQL Queries</span>
+            <span class="core-pill level-med">Algorithms</span>
+            <span class="core-pill level-med">Python</span>
+            <span class="core-pill level-med">Theory of Computation</span>
+          
+          </div>
+          <div class="core-legend">
+            <span class="legend-dot strong"></span> Strong &nbsp;
+            <span class="legend-dot med"></span> Proficient
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-category reveal">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🛠</span>
+            <h3>Tools &amp; Platforms</h3>
+          </div>
+          <div class="tool-cards">
+            <div class="tool-card">
+              <span class="tool-icon">🐙</span>
+              <span>Git &amp; GitHub</span>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">🗄️</span>
+              <span>MySQL</span>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">💻</span>
+              <span>VS Code</span>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">📓</span>
+              <span>Jupyter Notebook</span>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">🌐</span>
+              <span>Postman</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       PROJECTS SECTION
+  ========================================================= -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Work</div>
+      <h2 class="section-title reveal">Projects I've<br/><em>shipped.</em></h2>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-index="01">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">01</span>
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="proj-link" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+           <h3 class="project-title">PeerLearn — Credit-Based Peer Learning Platform</h3>
+
+<p class="project-desc">
+  A web platform that enables students to learn from peers through a flexible credit-based system.
+  Users can book sessions with mentors, attend live classes, and access AI-powered tools for interview preparation and skill improvement.
+</p>
+
+<div class="project-features">
+  <div class="feature">✦ Email/Password & Google Authentication (Firebase)</div>
+  <div class="feature">✦ Credit-based session booking (1 credit = 1 lecture)</div>
+  <div class="feature">✦ User profile, dashboard & leaderboard system</div>
+  <div class="feature">✦ Email notifications for session booking</div>
+  <div class="feature">✦ AI Resume Analyzer (ATS score & suggestions)</div>
+  <div class="feature">✦ AI Mock Interview & Quiz Generator</div>
+  <div class="feature">✦ Google Meet-style session integration (in progress)</div>
+</div>
+
+<div class="project-tech">
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JavaScript</span>
+  <span>Firebase</span>
+  <span>Database</span>
+</div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal" data-index="02">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="proj-link" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Personal Cloud — Self-Hosted Storage System</h3>
+
+<p class="project-desc">
+  Built a personal cloud storage system using Raspberry Pi and Docker, enabling secure file storage, access, and management without relying on third-party cloud services.
+  The system allows users to host their own data with full control over storage and privacy.
+</p>
+
+<div class="project-features">
+  <div class="feature">✦ Self-hosted cloud setup using Raspberry Pi</div>
+  <div class="feature">✦ Containerized services using Docker</div>
+  <div class="feature">✦ Secure file upload, storage & access</div>
+  <div class="feature">✦ Local network-based data access</div>
+  <div class="feature">✦ Lightweight and cost-effective cloud alternative</div>
+</div>
+
+<div class="project-tech">
+  <span>Raspberry Pi</span>
+  <span>Docker</span>
+  <span>Linux</span>
+  <span>Networking</span>
+</div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal" data-index="03">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">03</span>
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="proj-link" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">AyurSutra — Panchakarma Management System</h3>
+
+<p class="project-desc">
+  Developed a full-fledged management system for Panchakarma hospitals to streamline patient handling, treatment workflows, and role-based operations.
+  The system improves efficiency by organizing data and processes across multiple user roles.
+</p>
+
+<div class="project-features">
+  <div class="feature">✦ Role-based system (Practitioner, Doctor, User)</div>
+  <div class="feature">✦ Patient record and treatment management</div>
+  <div class="feature">✦ Workflow organization for hospital operations</div>
+  <div class="feature">✦ Secure data handling and structured storage</div>
+</div>
+
+<div class="project-tech">
+  <span>HTML</span>
+  <span>CSS</span>
+  <span>JavaScript</span>
+  <span>Database</span>
+</div>
+        </article>
+        
+        <!-- Project 4 -->
+        <article class="project-card reveal" data-index="02">
+          <div class="project-card-inner">
+            <div class="project-top">
+              <span class="project-num">02</span>
+              <div class="project-links">
+                <a href="#" class="proj-link" aria-label="GitHub">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="#" class="proj-link" aria-label="Live Demo">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            
+                
+             <h3 class="project-title">Smart Agriculture Web Platform</h3>
+           <p class="project-desc">
+                A smart agriculture web platform designed to help farmers with crop disease detection, marketplace access, and government scheme awareness using AI-powered features.
+              </p>
+
+              <div class="project-features">
+                <div class="feature">✦ Farmer-focused e-commerce system for buying and selling agricultural products</div>
+                <div class="feature">✦ AI-based plant disease prediction module using image input</div>
+                <div class="feature">✦ Government schemes information portal for farmer awareness</div>
+                <div class="feature">✦ Separate seller and buyer roles with product listing system</div>
+                <div class="feature">✦ Responsive UI built using HTML, CSS, JavaScript & Bootstrap</div>
+                <div class="feature">✦ API integration for AI-based suggestions and predictions</div>
+              </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       ACHIEVEMENTS SECTION
+  ========================================================= -->
+  <section class="section achievements-section" id="achievements">
+    <div class="container">
+      <div class="section-label reveal">Recognition</div>
+      <h2 class="section-title reveal">Milestones &amp;<br/><em>achievements.</em></h2>
+
+      <div class="achieve-grid">
+
+        <!-- DSA Progress card -->
+        <div class="achieve-card achieve-dsa reveal">
+          <div class="achieve-card-header">
+            <span class="achieve-icon">⚡</span>
+            <span class="achieve-badge">Coding Progress</span>
+          </div>
+          <div class="dsa-stats">
+            <div class="dsa-platform">
+              <div class="platform-name">LeetCode</div>
+              <div class="platform-count"><span class="count-num" data-target="20">0</span>+ Problems</div>
+              <div class="platform-bar"><div class="pb-fill" style="--w:40%"></div></div>
+              <div class="platform-breakdown">Easy: 10 &nbsp;|&nbsp; Medium: 10 &nbsp;|&nbsp; Hard: 3</div>
+            </div>
+            <div class="dsa-platform">
+              <div class="platform-name">GeeksforGeeks</div>
+              <div class="platform-count"><span class="count-num" data-target="20">0</span>+ Problems</div>
+              <div class="platform-bar"><div class="pb-fill pb-green" style="--w:40%"></div></div>
+              <div class="platform-breakdown">Practice streak: 20 days</div>
+            </div>
+            <div class="dsa-platform">
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications -->
+        <div class="achieve-certs reveal">
+          <h3 class="certs-heading">Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+                <div>
+                <div class="cert-name">Google Student Ambassador</div>
+                <div class="cert-issuer">Google</div>
+                <div class="cert-year">2024</div>
+                <a href="https://drive.google.com/file/d/1F_39a5r7FgjgHA43ma97m5XcfRoIfb_6/view?usp=sharing" target="_blank" class="cert-link">View Certificate</a>
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">E-Cell Campus Ambassador and NEC Team Leadre</div>
+                <div class="cert-issuer">Entrepreneurship Cell IIT Bombay </div>
+                <div class="cert-year">2023</div>
+                <a href="https://drive.google.com/file/d/1EcFcI6fOaAG3EatuZu5XsQxPxFbE9J8l/view?usp=sharing" target="_blank" class="cert-link">View Certificate(E-Cell)</a><br>
+                <a href="https://drive.google.com/file/d/1NM8vcygp9RZ8E3cJcglgzg1tG2bi6rGd/view?usp=sharing" target="_blank" class="cert-link">View Certificate(NEC)</a>
+
+
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Git Version Control for Developers</div>
+                <div class="cert-issuer">Udemy — Martijn vissers</div>
+                <div class="cert-year">2025</div>
+                <a href="https://drive.google.com/file/d/1GmXcUqMRGKWQg9wq1Kzg0jqN1rlHxhy1/view" target="_blank" class="cert-link">View Certificate\/a>
+
+              </div>
+            </div>
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <div>
+                <div class="cert-name">Web Design Course for Beginners to Intermediate</div>
+                <div class="cert-issuer">Udemy - Stephen Koel Soren</div>
+                <div class="cert-year">2025</div>
+                <a href="https://drive.google.com/file/d/1mr5Vu0757DoGMkA2WWwCYVncFYYKYugx/view?usp=sharing" target="_blank" class="cert-link">View Certificate</a>
+
+              </div> 
+              
+            </div>
+            <div class="cert-item">
+              <div class="cert-dot"></div>
+              <div class="publication">
+                  <div class="pub-title">Research Paper Published on Agriculture-Based AI Web Project</div>
+                  <div class="pub-details">
+                    Published in <strong>international journal of Scientific research and engineering development</strong> — 2025
+                  </div>
+                  <div class="pub-desc">
+                    A smart agriculture platform that integrates an e-commerce marketplace, AI-based crop disease prediction, and government scheme access to empower farmers with better tools for decision-making and productivity.
+                  </div>
+                  <a href="https://drive.google.com/file/d/16aocsidsOGqx9yyrIi0BdtXmvawPE0wX/view?usp=sharing" target="_blank" class="pub-btn">View Paper</a>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Extra achievements -->
+        <div class="achieve-extra reveal">
+          <h3 class="certs-heading">Highlights</h3>
+          <div class="extra-list">
+            <div class="extra-item">
+              <span class="extra-icon">🏆</span>
+              <div>
+                <div class="extra-title">Hackathon Participation – SVERI 36 Hours Hackathon</div>
+                <div class="extra-sub">SVERI COE, 2026 — Team of 4, built an AI-ass a peer-to-peer learning platform that enables students to connect, share knowledge, and collaborate for effective learning during the SVERI 36-hour hackathon.</div>
+              </div>
+            </div>
+            <div class="extra-item">
+              <span class="extra-icon">🏆</span>
+              <div>
+                <div class="extra-title">🏆 2nd Prize – Avishkar DBATU University Competition</div>
+                <div class="extra-sub">Presented a healthcare-focused project in the Avishkar competition at DBATU University and secured 2nd prize for innovative problem-solving and presentation.</div>
+              </div>
+            </div>
+            <div class="extra-item">
+              <span class="extra-icon">🌐</span>
+              <div>
+                <div class="extra-title">⭐ E-Cell Organizer – Paper Presentation Competition</div>
+                <div class="extra-sub">Organized and coordinated a paper presentation competition under the Entrepreneurship Cell (E-Cell), managing participant coordination, event flow, and successful execution of the event.</div>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION
+  ========================================================= -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label reveal">Let's Connect</div>
+      <h2 class="section-title reveal">Open to<br/><em>opportunities.</em></h2>
+
+      <div class="contact-grid">
+        <!-- Left info -->
+        <div class="contact-info reveal">
+          <p class="contact-blurb">
+            Whether you're a recruiter with an exciting opening, a fellow developer who wants to collaborate,
+            or simply want to talk tech — my inbox is always open.
+          </p>
+          <div class="contact-links">
+            <a href="mailto:aryan.kulkarni@example.com" class="contact-link">
+              <span class="cl-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <div class="cl-label">Email</div>
+                <div class="cl-value">anjaliajitmane22@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://www.linkedin.com/in/anjali-mane-7161ab2bb/" target="_blank" class="contact-link">
+              <span class="cl-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              </span>
+              <div>
+                <div class="cl-label">LinkedIn</div>
+                <div class="cl-value">linkedin.com/in/anjali-mane-7161ab2bb/</div>
+              </div>
+            </a>
+           
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: contact form -->
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="name" placeholder="Jane Recruiter" required />
+              </div>
+              <div class="form-group">
+                <label for="femail">Email</label>
+                <input type="email" id="femail" name="email" placeholder="jane@company.com" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="fsubject">Subject</label>
+              <input type="text" id="fsubject" name="subject" placeholder="Internship Opportunity / Collaboration" />
+            </div>
+            <div class="form-group">
+              <label for="fmsg">Message</label>
+              <textarea id="fmsg" name="message" rows="5" placeholder="Tell me what's on your mind..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-arrow">→</span>
+            </button>
+            <div class="form-success" id="formSuccess">
+              ✅ Message sent! I'll get back to you shortly.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================= -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-logo">AM<span class="dot">.</span></div>
+      <p class="footer-copy">Designed &amp; built by Anjali Mane — 2024</p>
+      <p class="footer-quote">"First, solve the problem. Then, write the code."</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+>>>>>>> 050d097c8119dbf7ee7f484592288862bb878f32
 </html>
